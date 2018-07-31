@@ -78,7 +78,7 @@ brew cask install the-unarchiver
 brew cask install time-out
 brew cask install visual-studio-code
 brew cask install vlc
-brew casm install vanilla
+brew cask install vanilla
 
 # npm
 curl -sSl http://npmjs.org/install.sh | sh
