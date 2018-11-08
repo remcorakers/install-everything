@@ -15,12 +15,13 @@ choco install jre8
 choco install microsoft-teams
 choco install nodejs
 choco install notepadplusplus
-choco install resharper-platform
 choco install sourcetree
 choco install spotify
 choco install sql-server-express
 choco install sql-server-management-studio
 choco install visualstudio2017enterprise
+choco install resharper --pre
+choco install dotpeek --pre
 choco install vlc
 choco install vscode
 choco install windirstat
