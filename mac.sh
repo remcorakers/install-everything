@@ -47,7 +47,6 @@ brew install sonar-scanner
 brew install telnet
 brew install thefuck
 brew install tree
-brew install tree
 brew install watchman
 brew install wget
 brew install yarn
@@ -56,7 +55,8 @@ brew install zsh-autosuggestions
 
 # brew cask
 brew cask install 1password
-brew cask install alfred 
+brew cask install alfred
+brew cask install appcleaner
 brew cask install docker
 brew cask install dropbox
 brew cask install flux 
