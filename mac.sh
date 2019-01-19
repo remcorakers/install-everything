@@ -57,6 +57,7 @@ brew install zsh-autosuggestions
 brew cask install 1password
 brew cask install alfred
 brew cask install appcleaner
+brew cask install cyberduck
 brew cask install docker
 brew cask install dropbox
 brew cask install flux 
