@@ -1,5 +1,8 @@
 # osx
 
+# exit on error
+set -e
+
 # set topbar to darkmode
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
 
@@ -33,6 +36,7 @@ brew install applesimutils
 brew install azure-cli
 brew install cloc
 brew install gcc
+brew install git-lfs
 brew install gradle
 brew install jenv
 brew install kubernetes-cli
@@ -65,7 +69,9 @@ brew cask install google-chrome
 brew cask install intellij-idea
 brew cask install iterm2
 brew cask install kap
-brew cask install mongohub
+brew cask install karabiner-elements
+brew cask install java
+brew cask install jeromelebel-mongohub
 brew cask install muzzle
 brew cask install onedrive
 brew cask install postman
@@ -77,9 +83,13 @@ brew cask install spotify
 brew cask install superduper
 brew cask install the-unarchiver
 brew cask install time-out
+brew cask install vanilla
+brew cask install virtualbox
 brew cask install visual-studio-code
 brew cask install vlc
-brew cask install vanilla
+
+# install git lfs
+git lfs install
 
 # npm
 curl -sSl http://npmjs.org/install.sh | sh
@@ -97,6 +107,9 @@ pip install virtualenvwrapper
 # zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+# install powerline fonts for zsh
+git clone https://github.com/powerline/fonts.git --depth=1 && ./fonts/install.sh && rm -rf fonts
+
 # vs code extensions
 # generate with: code --list-extensions | xargs -L 1 echo code --install-extension
 code --install-extension alexkrechik.cucumberautocomplete
@@ -106,14 +119,22 @@ code --install-extension DotJoshJohnson.xml
 code --install-extension eamodio.gitlens
 code --install-extension eg2.tslint
 code --install-extension eriklynd.json-tools
+code --install-extension esbenp.prettier-vscode
 code --install-extension joelday.docthis
+code --install-extension KnisterPeter.vscode-commitizen
+code --install-extension KnisterPeter.vscode-github
+code --install-extension kumar-harsh.graphql-for-vscode
 code --install-extension Leopotam.csharpfixformat
 code --install-extension mikestead.dotenv
 code --install-extension mohsen1.prettify-json
 code --install-extension mrmlnc.vscode-apache
+code --install-extension ms-azuretools.vscode-azureappservice
+code --install-extension ms-azuretools.vscode-azurefunctions
 code --install-extension ms-mssql.mssql
 code --install-extension ms-python.python
+code --install-extension ms-vscode.azure-account
 code --install-extension ms-vscode.csharp
+code --install-extension ms-vscode.Go
 code --install-extension ms-vscode.PowerShell
 code --install-extension PeterJausovec.vscode-docker
 code --install-extension rbbit.typescript-hero
@@ -121,6 +142,7 @@ code --install-extension redhat.java
 code --install-extension secanis.jenkinsfile-support
 code --install-extension travisthetechie.write-good-linter
 code --install-extension vscjava.vscode-java-debug
+code --install-extension vscjava.vscode-java-dependency
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vscjava.vscode-java-test
 code --install-extension vscjava.vscode-maven
