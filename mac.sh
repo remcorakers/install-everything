@@ -72,6 +72,7 @@ brew cask install kap
 brew cask install karabiner-elements
 brew cask install java
 brew cask install jeromelebel-mongohub
+brew cask install microsoft-teams
 brew cask install muzzle
 brew cask install onedrive
 brew cask install postman
@@ -87,6 +88,8 @@ brew cask install vanilla
 brew cask install virtualbox
 brew cask install visual-studio-code
 brew cask install vlc
+brew cask install whatsapp
+brew cask install zeplin
 
 # install git lfs
 git lfs install
