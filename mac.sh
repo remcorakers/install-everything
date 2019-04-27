@@ -41,6 +41,7 @@ brew install gradle
 brew install jenv
 brew install kubernetes-cli
 brew install macvim
+brew install mas
 brew install maven
 brew install node
 brew install openssl
@@ -90,6 +91,10 @@ brew cask install visual-studio-code
 brew cask install vlc
 brew cask install whatsapp
 brew cask install zeplin
+
+# Mac App Store
+mas install 937984704 # amphetamine
+mas install 497799835 # xcode
 
 # install git lfs
 git lfs install
