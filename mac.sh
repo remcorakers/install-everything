@@ -73,6 +73,7 @@ brew cask install drawio
 brew cask install dropbox
 brew cask install flux
 brew cask install genymotion
+brew cask install gimp
 brew cask install gitup
 brew cask install google-chrome
 brew cask install grandperspective
@@ -85,11 +86,15 @@ brew cask install karabiner-elements
 brew cask install microsoft-teams
 brew cask install onedrive
 brew cask install pibakery
+brew cask install poedit
 brew cask install postman
 brew cask install psequel
 brew cask install react-native-debugger
+# See RectangleConfig.json for an export of Rectangle's shortcuts
+brew cask install rectangle
 brew cask install rider
 brew cask install rowanj-gitx
+brew cask install signal
 brew cask install skype
 brew cask install slack
 brew cask install sourcetree
@@ -117,12 +122,10 @@ git lfs install
 
 # npm
 curl -sSl http://npmjs.org/install.sh | sh
-npm i -g n
-npm i -g npx
-npm i -g exp
-npm i -g gatsby-cli
-npm i -g hicat
-npm i -g serve
+yarn global install exp-cli
+yarn global install gatsby-cli
+yarn global install hicat
+yarn global install serve
 
 # python
 easy_install pip
@@ -137,51 +140,35 @@ git clone https://github.com/powerline/fonts.git --depth=1 && ./fonts/install.sh
 
 # vs code extensions
 # generate with: code --list-extensions | xargs -L 1 echo code --install-extension
-code --install-extension alexkrechik.cucumberautocomplete
-code --install-extension anybody.anyscript
+code --install-extension BotBuilder.bot-framework-adaptive-tools
 code --install-extension byCedric.vscode-expo
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension deerawan.vscode-dash
-code --install-extension DotJoshJohnson.xml
+code --install-extension cssho.vscode-svgviewer
 code --install-extension eamodio.gitlens
-code --install-extension eg2.tslint
-code --install-extension eriklynd.json-tools
+code --install-extension EditorConfig.EditorConfig
 code --install-extension esbenp.prettier-vscode
+code --install-extension fabianlauer.vs-code-xml-format
 code --install-extension formulahendry.dotnet-test-explorer
-code --install-extension golang.go
-code --install-extension icsharpcode.ilspy-vscode
-code --install-extension James-Yu.latex-workshop
-code --install-extension joelday.docthis
-code --install-extension johnpapa.vscode-peacock
-code --install-extension k--kato.docomment
-code --install-extension karigari.chat
-code --install-extension KnisterPeter.vscode-commitizen
-code --install-extension KnisterPeter.vscode-github
-code --install-extension kumar-harsh.graphql-for-vscode
-code --install-extension Leopotam.csharpfixformat
-code --install-extension mikestead.dotenv
-code --install-extension mohsen1.prettify-json
-code --install-extension mrmlnc.vscode-apache
-code --install-extension ms-azuretools.vscode-azureappservice
-code --install-extension ms-azuretools.vscode-azurefunctions
+code --install-extension mathiasfrohlich.Kotlin
+code --install-extension ms-azure-devops.azure-pipelines
 code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-azuretools.vscode-tye
 code --install-extension ms-dotnettools.csharp
 code --install-extension ms-dotnettools.vscode-dotnet-runtime
-code --install-extension ms-mssql.mssql
 code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
+code --install-extension ms-toolsai.jupyter
+code --install-extension ms-toolsai.jupyter-keymap
+code --install-extension ms-toolsai.jupyter-renderers
+code --install-extension ms-vscode-remote.remote-containers
 code --install-extension ms-vscode.azure-account
-code --install-extension ms-vscode.powershell
 code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension ms-vsliveshare.vsliveshare-audio
-code --install-extension ms-vsliveshare.vsliveshare-pack
 code --install-extension msazurermtools.azurerm-vscode-tools
-code --install-extension mtxr.sqltools
+code --install-extension naumovs.color-highlight
 code --install-extension octref.vetur
-code --install-extension rbbit.typescript-hero
+code --install-extension oouo-diogo-perdigao.docthis
+code --install-extension Orta.vscode-jest
 code --install-extension redhat.java
-code --install-extension secanis.jenkinsfile-support
-code --install-extension TomiTurtiainen.rf-intellisense
-code --install-extension travisthetechie.write-good-linter
+code --install-extension syler.sass-indented
 code --install-extension Tyriar.sort-lines
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension vscjava.vscode-java-debug
@@ -189,4 +176,4 @@ code --install-extension vscjava.vscode-java-dependency
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vscjava.vscode-java-test
 code --install-extension vscjava.vscode-maven
-code --install-extension zhouronghui.propertylist
+code --install-extension withfig.fig
