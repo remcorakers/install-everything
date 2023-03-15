@@ -131,10 +131,17 @@ git lfs install
 
 # npm
 curl -sSl http://npmjs.org/install.sh | sh
-yarn global add exp-cli
-yarn global add gatsby-cli
-yarn global add hicat
-yarn global add serve
+
+# default nvm packages
+echo '@angular/cli
+@antfu/ni
+@nestjs/cli
+corepack
+eas-cli
+expo-cli
+nx
+pnpm
+' > $NVM_DIR/default-packages
 
 # zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
