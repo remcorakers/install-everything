@@ -32,6 +32,7 @@ brew update
 brew tap homebrew/cask
 
 # brew
+brew install amazon-ecs-cli
 brew install azure-cli
 brew install cloc
 brew install gcc
@@ -42,7 +43,6 @@ brew install kubernetes-cli
 brew install macvim
 brew install mas
 brew install maven
-brew install nvm
 brew install openssl
 brew install python
 brew install python3
@@ -59,9 +59,11 @@ brew install zsh-autosuggestions
 
 # brew cask
 brew install --cask 1password
+brew install --cask 1password-cli
 brew install --cask alfred
 brew install --cask android-studio
 brew install --cask appcleaner
+brew install --cask caffeine
 brew install --cask cyberduck
 brew install --cask dash
 brew install --cask dbeaver-community
@@ -78,10 +80,12 @@ brew install --cask gimp
 brew install --cask gitup
 brew install --cask google-chrome
 brew install --cask grandperspective
+brew install --cask hiddenbar
 brew install --cask intellij-idea
 brew install --cask iterm2
 brew install --cask kap
 brew install --cask masscode
+brew install --cask microsoft-azure-storage-explorer
 brew install --cask microsoft-teams
 brew install --cask microsoft-remote-desktop
 brew install --cask mongodb-compass
@@ -97,7 +101,6 @@ brew install --cask signal
 brew install --cask skype
 brew install --cask slack
 brew install --cask sourcetree
-brew install --cask spectacle
 brew install --cask spotify
 brew install --cask superduper
 brew install --cask tableplus
@@ -107,14 +110,15 @@ brew install --cask vagrant
 brew install --cask vanilla
 brew install --cask visual-studio-code
 brew install --cask vlc
+brew install --cask warp
 brew install --cask whatsapp
 brew install --cask zeplin
 
 # java
 brew install java
 brew install jenv
-echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(jenv init -)"' >> ~/.zshrc
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >>~/.zshrc
+echo 'eval "$(jenv init -)"' >>~/.zshrc
 brew install --cask temurin
 brew install --cask adoptopenjdk
 
@@ -129,23 +133,23 @@ mas install 497799835 # xcode
 # install git lfs
 git lfs install
 
-# npm
-curl -sSl http://npmjs.org/install.sh | sh
+# node with volta
+curl https://get.volta.sh | bash
+volta install node
 
-# default nvm packages
-echo '@angular/cli
-@antfu/ni
-@nestjs/cli
-corepack
-eas-cli
-expo-cli
-nx
-pnpm
-' > $NVM_DIR/default-packages
+# default node packages
+volta install @angular/cli
+volta install @antfu/ni
+volta install @nestjs/cli
+volta install corepack
+volta install eas-cli
+volta install expo-cli
+volta install nx
+volta install pnpm
 
 # zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-echo 'source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc
+echo 'source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh' >>~/.zshrc
 
 # install powerline fonts for zsh
 git clone https://github.com/powerline/fonts.git --depth=1 && ./fonts/install.sh && rm -rf fonts
